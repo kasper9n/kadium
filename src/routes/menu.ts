@@ -189,7 +189,7 @@ export async function create_menu() {
 			{
 				text: 'Learn More',
 				action() {
-					openUrl('https://github.com/probablykasper/kadium')
+					openUrl('https://github.com/kasper9n/kadium')
 				},
 			},
 		],

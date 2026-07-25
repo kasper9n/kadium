@@ -684,6 +684,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "core-graphics"
+version = "0.25.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "064badf302c3194842cf2c5d61f56cc88e54a759313879cdf03abdd27d0c3b97"
+dependencies = [
+ "bitflags 2.9.4",
+ "core-foundation 0.10.1",
+ "core-graphics-types 0.2.0",
+ "foreign-types 0.5.0",
+ "libc",
+]
+
+[[package]]
 name = "core-graphics-types"
 version = "0.1.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -923,12 +936,6 @@ dependencies = [
  "redox_users",
  "windows-sys 0.61.0",
 ]
-
-[[package]]
-name = "dispatch"
-version = "0.2.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bd0c93bb4b0c6d9b77f4435b0ae98c24d17f1c45b2ff844c6151a07256ca923b"
 
 [[package]]
 name = "dispatch2"
@@ -2016,9 +2023,9 @@ dependencies = [
 
 [[package]]
 name = "ico"
-version = "0.4.0"
+version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cc50b891e4acf8fe0e71ef88ec43ad82ee07b3810ad09de10f1d01f072ed4b98"
+checksum = "3e795dff5605e0f04bff85ca41b51a96b83e80b281e96231bcaaf1ac35103371"
 dependencies = [
  "byteorder",
  "png",
@@ -2327,7 +2334,7 @@ dependencies = [
  "specta-typescript",
  "sqlx",
  "tauri",
- "tauri-build 2.4.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "tauri-build 2.4.1",
  "tauri-plugin-dialog",
  "tauri-plugin-notification",
  "tauri-plugin-opener",
@@ -4942,23 +4949,22 @@ dependencies = [
 
 [[package]]
 name = "tao"
-version = "0.34.3"
+version = "0.34.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "959469667dbcea91e5485fc48ba7dd6023face91bb0f1a14681a70f99847c3f7"
+checksum = "9103edf55f2da3c82aea4c7fab7c4241032bfeea0e71fa557d98e00e7ce7cc20"
 dependencies = [
  "bitflags 2.9.4",
  "block2 0.6.1",
  "core-foundation 0.10.1",
- "core-graphics 0.24.0",
+ "core-graphics 0.25.0",
  "crossbeam-channel",
- "dispatch",
+ "dispatch2",
  "dlopen2",
  "dpi",
  "gdkwayland-sys",
  "gdkx11-sys",
  "gtk",
  "jni",
- "lazy_static",
  "libc",
  "log",
  "ndk",
@@ -4970,7 +4976,6 @@ dependencies = [
  "once_cell",
  "parking_lot",
  "raw-window-handle",
- "scopeguard",
  "tao-macros",
  "unicode-segmentation",
  "url",
@@ -4999,8 +5004,8 @@ checksum = "61c41af27dd6d1e27b1b16b489db798443478cef1f06a660c96db617ba5de3b1"
 
 [[package]]
 name = "tauri"
-version = "2.8.5"
-source = "git+https://github.com/probablykasper/tauri?branch=fix%2Fhelp-menu-mac#c887d0422884ab7b2e1fcfe97b2bb02fb53edecc"
+version = "2.9.5"
+source = "git+https://github.com/kasper9n/tauri?branch=fix%2Fhelp-menu-mac#53f573129f657fbdf2f3b9d6f5fc0c538b506ef1"
 dependencies = [
  "anyhow",
  "bytes",
@@ -5033,16 +5038,15 @@ dependencies = [
  "serialize-to-javascript",
  "specta",
  "swift-rs",
- "tauri-build 2.4.1 (git+https://github.com/probablykasper/tauri?branch=fix%2Fhelp-menu-mac)",
+ "tauri-build 2.5.3",
  "tauri-macros",
  "tauri-runtime",
  "tauri-runtime-wry",
- "tauri-utils 2.7.0 (git+https://github.com/probablykasper/tauri?branch=fix%2Fhelp-menu-mac)",
+ "tauri-utils 2.8.1",
  "thiserror 2.0.16",
  "tokio",
  "tray-icon",
  "url",
- "urlpattern",
  "webkit2gtk",
  "webview2-com",
  "window-vibrancy",
@@ -5065,7 +5069,7 @@ dependencies = [
  "semver",
  "serde",
  "serde_json",
- "tauri-utils 2.7.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "tauri-utils 2.7.0",
  "tauri-winres",
  "toml 0.9.7",
  "walkdir",
@@ -5073,8 +5077,8 @@ dependencies = [
 
 [[package]]
 name = "tauri-build"
-version = "2.4.1"
-source = "git+https://github.com/probablykasper/tauri?branch=fix%2Fhelp-menu-mac#c887d0422884ab7b2e1fcfe97b2bb02fb53edecc"
+version = "2.5.3"
+source = "git+https://github.com/kasper9n/tauri?branch=fix%2Fhelp-menu-mac#53f573129f657fbdf2f3b9d6f5fc0c538b506ef1"
 dependencies = [
  "anyhow",
  "cargo_toml",
@@ -5086,7 +5090,7 @@ dependencies = [
  "semver",
  "serde",
  "serde_json",
- "tauri-utils 2.7.0 (git+https://github.com/probablykasper/tauri?branch=fix%2Fhelp-menu-mac)",
+ "tauri-utils 2.8.1",
  "tauri-winres",
  "toml 0.9.7",
  "walkdir",
@@ -5094,8 +5098,8 @@ dependencies = [
 
 [[package]]
 name = "tauri-codegen"
-version = "2.4.0"
-source = "git+https://github.com/probablykasper/tauri?branch=fix%2Fhelp-menu-mac#c887d0422884ab7b2e1fcfe97b2bb02fb53edecc"
+version = "2.5.2"
+source = "git+https://github.com/kasper9n/tauri?branch=fix%2Fhelp-menu-mac#53f573129f657fbdf2f3b9d6f5fc0c538b506ef1"
 dependencies = [
  "base64 0.22.1",
  "brotli",
@@ -5110,7 +5114,7 @@ dependencies = [
  "serde_json",
  "sha2",
  "syn 2.0.106",
- "tauri-utils 2.7.0 (git+https://github.com/probablykasper/tauri?branch=fix%2Fhelp-menu-mac)",
+ "tauri-utils 2.8.1",
  "thiserror 2.0.16",
  "time",
  "url",
@@ -5120,15 +5124,15 @@ dependencies = [
 
 [[package]]
 name = "tauri-macros"
-version = "2.4.0"
-source = "git+https://github.com/probablykasper/tauri?branch=fix%2Fhelp-menu-mac#c887d0422884ab7b2e1fcfe97b2bb02fb53edecc"
+version = "2.5.2"
+source = "git+https://github.com/kasper9n/tauri?branch=fix%2Fhelp-menu-mac#53f573129f657fbdf2f3b9d6f5fc0c538b506ef1"
 dependencies = [
  "heck 0.5.0",
  "proc-macro2",
  "quote",
  "syn 2.0.106",
  "tauri-codegen",
- "tauri-utils 2.7.0 (git+https://github.com/probablykasper/tauri?branch=fix%2Fhelp-menu-mac)",
+ "tauri-utils 2.8.1",
 ]
 
 [[package]]
@@ -5143,7 +5147,7 @@ dependencies = [
  "schemars 0.8.22",
  "serde",
  "serde_json",
- "tauri-utils 2.7.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "tauri-utils 2.7.0",
  "toml 0.9.7",
  "walkdir",
 ]
@@ -5182,7 +5186,7 @@ dependencies = [
  "serde_repr",
  "tauri",
  "tauri-plugin",
- "tauri-utils 2.7.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "tauri-utils 2.7.0",
  "thiserror 2.0.16",
  "toml 0.9.7",
  "url",
@@ -5249,8 +5253,8 @@ dependencies = [
 
 [[package]]
 name = "tauri-runtime"
-version = "2.8.0"
-source = "git+https://github.com/probablykasper/tauri?branch=fix%2Fhelp-menu-mac#c887d0422884ab7b2e1fcfe97b2bb02fb53edecc"
+version = "2.9.2"
+source = "git+https://github.com/kasper9n/tauri?branch=fix%2Fhelp-menu-mac#53f573129f657fbdf2f3b9d6f5fc0c538b506ef1"
 dependencies = [
  "cookie",
  "dpi",
@@ -5263,7 +5267,7 @@ dependencies = [
  "raw-window-handle",
  "serde",
  "serde_json",
- "tauri-utils 2.7.0 (git+https://github.com/probablykasper/tauri?branch=fix%2Fhelp-menu-mac)",
+ "tauri-utils 2.8.1",
  "thiserror 2.0.16",
  "url",
  "webkit2gtk",
@@ -5273,8 +5277,8 @@ dependencies = [
 
 [[package]]
 name = "tauri-runtime-wry"
-version = "2.8.1"
-source = "git+https://github.com/probablykasper/tauri?branch=fix%2Fhelp-menu-mac#c887d0422884ab7b2e1fcfe97b2bb02fb53edecc"
+version = "2.9.3"
+source = "git+https://github.com/kasper9n/tauri?branch=fix%2Fhelp-menu-mac#53f573129f657fbdf2f3b9d6f5fc0c538b506ef1"
 dependencies = [
  "gtk",
  "http 1.3.1",
@@ -5289,7 +5293,7 @@ dependencies = [
  "softbuffer",
  "tao",
  "tauri-runtime",
- "tauri-utils 2.7.0 (git+https://github.com/probablykasper/tauri?branch=fix%2Fhelp-menu-mac)",
+ "tauri-utils 2.8.1",
  "url",
  "webkit2gtk",
  "webview2-com",
@@ -5364,8 +5368,8 @@ dependencies = [
 
 [[package]]
 name = "tauri-utils"
-version = "2.7.0"
-source = "git+https://github.com/probablykasper/tauri?branch=fix%2Fhelp-menu-mac#c887d0422884ab7b2e1fcfe97b2bb02fb53edecc"
+version = "2.8.1"
+source = "git+https://github.com/kasper9n/tauri?branch=fix%2Fhelp-menu-mac#53f573129f657fbdf2f3b9d6f5fc0c538b506ef1"
 dependencies = [
  "anyhow",
  "brotli",
@@ -6872,9 +6876,9 @@ checksum = "ea2f10b9bb0928dfb1b42b65e1f9e36f7f54dbdf08457afefb38afcdec4fa2bb"
 
 [[package]]
 name = "wry"
-version = "0.53.3"
+version = "0.53.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "31f0e9642a0d061f6236c54ccae64c2722a7879ad4ec7dff59bd376d446d8e90"
+checksum = "728b7d4c8ec8d81cab295e0b5b8a4c263c0d41a785fb8f8c4df284e5411140a2"
 dependencies = [
  "base64 0.22.1",
  "block2 0.6.1",

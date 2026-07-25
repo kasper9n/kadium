@@ -64,7 +64,7 @@
 	>
 		<a
 			class="icon github sm:p-1.5"
-			href="https://github.com/probablykasper/kadium"
+			href="https://github.com/kasper9n/kadium"
 			aria-label="GitHub"
 			style="-webkit-tap-highlight-color: hsla(0, 0%, 100%, 0.1);"
 			><svg height="24" width="24" viewBox="-2 -2 28 28" xmlns="http://www.w3.org/2000/svg"

@@ -60,7 +60,7 @@
 		downloadError = ''
 		try {
 			const response = await fetch(
-				`https://api.github.com/repos/probablykasper/kadium/releases/latest`,
+				`https://api.github.com/repos/kasper9n/kadium/releases/latest`,
 			)
 			console.log(response)
 
