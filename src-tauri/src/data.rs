@@ -36,7 +36,7 @@ impl AppPaths {
 		AppPaths {
 			app_dir: app_dir.clone(),
 			settings_file: app_dir.join("Settings.json"),
-			db: app_dir.join("Kadium.sqlite").to_string_lossy().to_string(),
+			db: app_dir.join("Kadium.sqlite").to_str().unwrap().to_string(),
 		}
 	}
 }
